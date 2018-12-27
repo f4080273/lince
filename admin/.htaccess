@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond $1 !^(index\.php|no_img.png|images|swf|uploads|js|css|assets|robots\.txt|$)
+    RewriteRule ^(.*)$ /lince/admin/index.php/$1 [L,QSA]
+</IfModule>

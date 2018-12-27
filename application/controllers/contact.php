@@ -18,6 +18,10 @@
 
 			$data['Head']		= $this -> load -> view('/template/head',$data,true);
 
+			$data['get_CatalogProduct'] = $this-> setup ->get_Catalog('356');
+
+			$data['get_CatalogDevice'] = $this-> setup ->get_Catalog('359');
+
 			$data['TopMenu']	= $this -> load -> view('/template/top_menu',$data,true);
 
 			$data['Footer']		= $this -> load -> view('/template/footer',$data,true);
@@ -45,7 +49,7 @@
 		}
 		function send_message()
 		{
-			
+
 			$data = $this->contact_process->Add_ContactData($this->input->POST());
 
 			echo json_encode($data);

@@ -14,6 +14,7 @@
 			$PageNum = 25;
 			$this->db->select('About_Id,About_Sort,About_Status,About_Title,About_Content,About_EditTime');
 			$this->db->from('about');
+			$this->db->join('about_type','About_AboutTypeId=AboutType_Id AND AboutType_Show = 1');
 			$this->db->where('About_Del','0');
 			if($this->input->get('type_id')){
 				$this->db->like('About_AboutTypeId',$this->input->get('type_id'));
@@ -29,6 +30,7 @@
 
 			$this->db->select('count(About_Id) AS Num');
 			$this->db->from('about');
+			$this->db->join('about_type','About_AboutTypeId=AboutType_Id AND AboutType_Show = 1');
 			$this->db->where('About_Del','0');
 			if($this->input->get('type_id')){
 				$this->db->like('About_AboutTypeId',$this->input->get('type_id'));

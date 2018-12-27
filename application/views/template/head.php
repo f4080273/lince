@@ -36,7 +36,10 @@
   <!-- Mobile Menu -->
 	<link rel="stylesheet" type="text/css" href="<?=_Web_Url?>/assets/css/jquery.mmenu.all.css" />
 	<link rel="stylesheet" type="text/css" href="<?=_Web_Url?>/assets/css/demo.css" />
-	<!--main file-->
+
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <!--main file-->
 	<link href="<?=_Web_Url?>/assets/css/industry-guide.min.css" rel="stylesheet" type="text/css">
 	<link href="<?=_Web_Url?>/assets/css/responsive.min.css" rel="stylesheet" type="text/css">
 	<!--PreLoader-->

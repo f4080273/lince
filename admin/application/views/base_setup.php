@@ -26,10 +26,6 @@
 							 <label for="textfield">網站簡介</label>
 							 <textarea class="form-control" name="web_content" rows="25" cols="120" placeholder="請輸入您的網站簡介"><? if(isset($get_data_list['web_define'] -> varC)){echo $get_data_list['web_define'] -> varC;}?></textarea>
 						</div>
-						<div class="form-group">
-							 <label for="textfield">服務時間</label>
-							 <textarea class="form-control" name="web_service_time" rows="25" cols="120"><? if(isset($get_data_list['web_define'] -> varD)){echo $get_data_list['web_define'] -> varD;}?></textarea>
-						</div>
 						<h4>聯絡人信箱設置</h4>
 						<div class="form-group">
 					    <label for="exampleInputEmail1">聯絡人名稱</label>
@@ -45,7 +41,11 @@
 						</div>
 					</div>
 					<div class="col-6">
-						<h4>聯絡資訊(居家護理所)-不輸入則不顯示</h4>
+						<h4>聯絡資訊</h4>
+						<div class="form-group">
+							 <textarea class="form-control" name="web_service_time" rows="25" cols="120"><? if(isset($get_data_list['web_define'] -> varD)){echo $get_data_list['web_define'] -> varD;}?></textarea>
+						</div>
+						<h4>頁尾聯絡資訊</h4>
 						<div class="form-group">
 					    <label for="exampleInputEmail1">電話</label>
 					    <input type="email" class="form-control" name="contract1_tel" data-role="tagsinput" value="<?=$get_data_list['contract1']->varA?>">
@@ -65,40 +65,6 @@
 						<div class="form-group">
 					    <label for="exampleInputEmail1">郵件</label>
 					    <input type="text" class="form-control" name="contract1_email" data-role="tagsinput" value="<?=$get_data_list['contract1']->varE?>">
-					  </div>
-						<h4>聯絡資訊(診所)-不輸入則不顯示</h4>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">電話</label>
-					    <input type="email" class="form-control" name="contract2_tel" data-role="tagsinput" value="<?=$get_data_list['contract2']->varA?>">
-					  </div>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">傳真</label>
-					    <input type="text" class="form-control" name="contract2_fax" data-role="tagsinput" value="<?=$get_data_list['contract2']->varB?>">
-					  </div>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">手機</label>
-					    <input type="text" class="form-control" name="contract2_phone" data-role="tagsinput" value="<?=$get_data_list['contract2']->varC?>">
-					  </div>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">地址</label>
-					    <input type="text" class="form-control" name="contract2_address" value="<?=$get_data_list['contract2']->varD?>">
-					  </div>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">郵件</label>
-					    <input type="text" class="form-control" name="contract2_email" data-role="tagsinput" value="<?=$get_data_list['contract2']->varE?>">
-					  </div>
-						<h4>聯絡資訊(申訴方式)-不輸入則不顯示</h4>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">姓名</label>
-					    <input type="email" class="form-control" name="contract3_name" value="<?=$get_data_list['contract3']->varA?>">
-					  </div>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">電話</label>
-					    <input type="text" class="form-control" name="contract3_phone" data-role="tagsinput" value="<?=$get_data_list['contract3']->varB?>">
-					  </div>
-						<div class="form-group">
-					    <label for="exampleInputEmail1">郵件</label>
-					    <input type="text" class="form-control" name="contract3_email" data-role="tagsinput" value="<?=$get_data_list['contract3']->varC?>">
 					  </div>
 					</div>
 				</div>

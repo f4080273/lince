@@ -69,5 +69,17 @@
 
 			return $data;
 		}
+		function get_Catalog($ParentId = 0)
+		{
+			$this->db->select("Catalog_Id,Catalog_ParentId,Catalog_Name");
+			$this->db->from("catalog");
+      $this->db->where("Catalog_ParentId",$ParentId);
+			$this->db->where("Catalog_Del","0");
+			$this->db->where("Catalog_Status","1");
+			$this->db->order_by("Catalog_Sort DESC");
+			$query = $this->db->get();
+			$data = $query->result();
+			return $data;
+		}
 	}
 ?>

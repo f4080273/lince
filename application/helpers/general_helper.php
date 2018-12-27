@@ -29,3 +29,39 @@ function errors_code($Value = '')
   }
   return $data;
 }
+function fafa_contract_ask($Id)
+{
+  switch ($Id) {
+    case '1':
+      $data = '聯絡主旨';
+      break;
+    case '2':
+      $data = '聯絡主旨';
+      break;
+    case '3':
+      $data = '聯絡主旨';
+      break;
+    case '4':
+      $data = '聯絡主旨';
+      break;
+    case '5':
+      $data = '聯絡主旨';
+      break;
+    case '6':
+      $data = '聯絡主旨';
+      break;
+    case '7':
+      $data = '聯絡主旨';
+      break;
+    case '8':
+      $data = '聯絡主旨';
+      break;
+    case '9':
+      $data = '聯絡主旨';
+      break;
+      default:
+      $data = '請在新增 helpers/fafa_contract_ask 之參數';
+      break;
+  }
+  return $data;
+}

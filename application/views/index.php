@@ -314,6 +314,20 @@
   <div class="tp-bannertimer"></div>
  </div>
 </div>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="your-class">
+          <div><img src="http://www.yueki.com.tw/app_script/DisplayCut.ashx?file=201710180936490.jpg&rootDir=upload/product/&w=500&h=350" ></div>
+          <div><img src="http://www.yueki.com.tw/app_script/DisplayCut.ashx?file=201710180936490.jpg&rootDir=upload/product/&w=500&h=350" ></div>
+          <div><img src="http://www.yueki.com.tw/app_script/DisplayCut.ashx?file=201710180936490.jpg&rootDir=upload/product/&w=500&h=350" ></div>
+          <div><img src="http://www.yueki.com.tw/app_script/DisplayCut.ashx?file=201710180936490.jpg&rootDir=upload/product/&w=500&h=350" ></div>
+          <div><img src="http://www.yueki.com.tw/app_script/DisplayCut.ashx?file=201710180936490.jpg&rootDir=upload/product/&w=500&h=350" ></div>
+          <div><img src="http://www.yueki.com.tw/app_script/DisplayCut.ashx?file=201710180936490.jpg&rootDir=upload/product/&w=500&h=350" ></div>
+        </div>
+      </div>
+    </div>
+  </div>
    <!--End Banner-->
    <!--Start Content-->
    <div class="content">
@@ -323,8 +337,8 @@
       <div class="row">
         <div class="col-md-12">
           <div class="main-title">
-              <h2><span>認識</span> 我們</h2>
-              <p>致力推展居家醫療及護理優質服務，落實在宅健康老化，實現溫感心的新服務。</p>
+              <h2><span>社訓</h2>
+              <p></p>
           </div>
         </div>
      </div>
@@ -469,6 +483,18 @@ hideAllCaptionAtLilmit:0,
 startWithSlide:0,
 videoJsPath:"rs-plugin/videojs/",
 fullScreenOffsetContainer: ""
+});
+$(document).ready(function(){
+  $('.your-class').slick({
+    infinite: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });
 });
 </script>
 

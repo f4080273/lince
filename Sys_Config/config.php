@@ -16,9 +16,9 @@
 	//設定時區
 	date_default_timezone_set("Asia/Taipei");
 	//程式模式 development production
-	define('ENVIRONMENT','production');
+	define('ENVIRONMENT','development');
 
-	$url = "";
+	$url = "/lince";
 	define('_Web_Root'	, $_SERVER['DOCUMENT_ROOT'].$url);							// 最後沒有斜線
 	define('_Web_Url'	, 'http://'.$_SERVER['HTTP_HOST'].$url);					// 最後沒有斜線
 	define('_Media_Root', $_SERVER['DOCUMENT_ROOT'].$url.'/assets');				// 最後沒有斜線
@@ -33,9 +33,9 @@
 	define('_Manager_Root'	, _Web_Root.'/admin'); // 最後沒有斜線
 	define('_Manager_Url'	, _Web_Url.'/admin'); // 最後沒有斜線
 
-	//177buy資料庫 連線變數設定
-	define('_DB_USERNAME', 	'antifat1');
-	define('_DB_PASSWORD', 	'5tgb^YHN');
-	define('_DB_DBNAME', 	'antifat1');
-	define('_DB_HOST', 	'192.168.10.20');
+	//資料庫 連線變數設定
+	define('_DB_USERNAME', 	'root');
+	define('_DB_PASSWORD', 	'');
+	define('_DB_DBNAME', 	'lince');
+	define('_DB_HOST', 	'127.0.0.1');
 ?>

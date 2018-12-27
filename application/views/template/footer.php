@@ -11,6 +11,8 @@
                         <div class="detail">
                         	<ul>
                             	<li><a href="<?=_Web_Url?>">首頁</a></li>
+                              <li><a href="<?=_Web_Url?>/product/lts">主要產品</a></li>
+                              <li><a href="<?=_Web_Url?>/device/lts">設備介紹</a></li>
                               <?foreach ($AboutTypeList as $row) {?>
                                 <li><a href="<?=_Web_Url?>/about/lts/<?=$row->AboutType_Id?>"><?=$row->AboutType_Name?></a></li>
                               <?}?>
@@ -31,27 +33,7 @@
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="get-touch">
-                  	<div class="title">
-                    	<h5>申訴方式</h5>
-                    </div>
-                    <div class="detail">
-                    	<div class="get-touch">
-                            <span class="text">我們會於三日內回覆</span>
-                            <ul>
-                              <?if(isset($contract3->varA) && $contract3->varA != ''){?>
-                            	<li><i class="icon-user3"></i> <span><?=$contract3->varA?></span></li>
-                              <?}?>
-                              <?if(isset($contract3->varB) && $contract3->varB != ''){?>
-                              <li><i class="icon-phone4"></i> <span><?=$contract3->varB?></span></li>
-                              <?}?>
-                              <?if(isset($contract3->varC) && $contract3->varC != ''){?>
-                              <li><a href="mailto:<?=$contract3->varC?>"><i class="icon-dollar"></i> <span><?=$contract3->varC?></span></a></li>
-                              <?}?>
-                            </ul>
-                        </div>
-                    </div>
-                  </div>
+
                 </div>
                 <div class="col-md-3">
                   <div class="get-touch">
@@ -90,12 +72,6 @@
                 </div>
                 <div class="col-md-6">
                 </div>
-                <div class="col-md-12">
-                  <span style="color:#FFF">版權所有 2010 未經本所授權,請勿任意複製轉載及連結，敬請配合。
-                        禁止任何網際網路服務業者轉錄本院網路資訊之內容供人點閱。
-                  </span>
-                  <span style="color:#FFF">(但以網路搜尋或超連結方式，進入醫療機構之網址（域）直接點閱者，不在此限。)</span>
-                </div>
             </div>
         </div>
     </div>
@@ -104,7 +80,7 @@
 
 
 <script type="text/javascript" src="<?=_Web_Url?>/assets/js/jquery.min.js"></script>
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- SMOOTH SCROLL -->
 <script type="text/javascript" src="<?=_Web_Url?>/assets/js/scroll-desktop.js"></script>
 <script type="text/javascript" src="<?=_Web_Url?>/assets/js/scroll-desktop-smooth.js"></script>
@@ -141,3 +117,5 @@
 
 <!-- All Scripts -->
 <script type="text/javascript" src="<?=_Web_Url?>/assets/js/custom.js"></script>
+
+<script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.min.js"></script>

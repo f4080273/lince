@@ -14,8 +14,8 @@
 	//程式模式 development production
 	define('ENVIRONMENT','production');
 	//預設路徑
-	$url = "/admin";
-	define('_Img_Url'	, 'http://'.$_SERVER['HTTP_HOST']);
+	$url = "/lince/admin";
+	define('_Img_Url'	, 'http://'.$_SERVER['HTTP_HOST'].'/lince');
 	define('_Web_Root'	, $_SERVER['DOCUMENT_ROOT'].$url);							// 最後沒有斜線
 	define('_Web_Url'	, 'http://'.$_SERVER['HTTP_HOST'].$url);					// 最後沒有斜線
 	define('_Media_Root', $_SERVER['DOCUMENT_ROOT'].$url.'/system/media');				// 最後沒有斜線
@@ -28,8 +28,8 @@
 	include_once _Web_Root. "/Sys_Classes/function/jumpPage.class.php";
 
 	//資料庫 連線變數設定
-	define('_DB_USERNAME', 	'antifat1');
-	define('_DB_PASSWORD', 	'5tgb^YHN');
-	define('_DB_DBNAME', 	'antifat1');
-	define('_DB_HOST', 	'192.168.10.20');
+	define('_DB_USERNAME', 	'root');
+	define('_DB_PASSWORD', 	'');
+	define('_DB_DBNAME', 	'lince');
+	define('_DB_HOST', 	'127.0.0.1');
 ?>

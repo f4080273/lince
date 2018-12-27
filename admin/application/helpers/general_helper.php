@@ -94,31 +94,31 @@ function fafa_contract_ask($Id)
 {
   switch ($Id) {
     case '1':
-      $data = '居家醫療服務';
+      $data = '聯絡主旨';
       break;
     case '2':
-      $data = '居家護理服務';
+      $data = '聯絡主旨';
       break;
     case '3':
-      $data = '暫時或臨時全日型';
+      $data = '聯絡主旨';
       break;
     case '4':
-      $data = '半日型托顧服務';
+      $data = '聯絡主旨';
       break;
     case '5':
-      $data = '自費全日型或半日型托顧服務';
+      $data = '聯絡主旨';
       break;
     case '6':
-      $data = '成人健檢服務';
+      $data = '聯絡主旨';
       break;
     case '7':
-      $data = '流感疫苗接種服務';
+      $data = '聯絡主旨';
       break;
     case '8':
-      $data = '自費四價流感疫苗';
+      $data = '聯絡主旨';
       break;
     case '9':
-      $data = '老人肺炎雙球菌疫苗接種服務';
+      $data = '聯絡主旨';
       break;
       default:
       $data = '請在新增 helpers/fafa_contract_ask 之參數';
